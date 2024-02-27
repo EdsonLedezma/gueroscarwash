@@ -1,0 +1,31 @@
+.conocenos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .section img {
+    width: 200px;
+    margin-right: 20px;
+    border-radius: 8px;
+  }
+  
+  .section p {
+    font-size: 16px;
+  }
+  
+  
+  .section img {
+    border: 2px solid #007bff;
+  }
+  
+  .section p {
+    color: #007bff;
+  }
+  

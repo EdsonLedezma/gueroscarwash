@@ -1,0 +1,21 @@
+
+.service-card {
+    margin-bottom: 20px;
+  }
+  
+  .image-carousel {
+    display: flex;
+    overflow-x: auto;
+  }
+  
+  .image-carousel img {
+    width: 100px; 
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .description {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
