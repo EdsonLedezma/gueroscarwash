@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-
+Tengo un error con la importacion del switch en mi router-dom y no lo pude arreglar en todo el fin de semana, quiza deba implementarlo de otra manera
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
