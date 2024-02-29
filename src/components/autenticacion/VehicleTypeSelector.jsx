@@ -13,19 +13,19 @@ const VehicleTypeSelector = () => {
       <h2>Selecciona el tipo de vehículo:</h2>
       <div className="types">
         <div className="button-container">
-          <img src="compacto.jpg" alt="Compacto" />
+          <img src="https://s1.1zoom.me/big0/610/Chevrolet_White_Metallic_White_background_599623_1280x853.jpg" alt="Compacto" />
           <button onClick={() => handleTypeSelection('compacto')}>Compacto</button>
         </div>
         <div className="button-container">
-          <img src="suv.jpg" alt="SUV" />
+          <img src="http://pluspng.com/img-png/white-suv-png-13-38-2048.png" alt="SUV" />
           <button onClick={() => handleTypeSelection('suv')}>SUV</button>
         </div>
         <div className="button-container">
-          <img src="pickup.jpg" alt="Pickup" />
+          <img src="https://pngimg.com/uploads/pickup_truck/pickup_truck_PNG102882.png" alt="pickup" />
           <button onClick={() => handleTypeSelection('pickup')}>Pickup</button>
         </div>
         <div className="button-container">
-          <img src="sedan.jpg" alt="Sedán" />
+          <img src="" alt="sedan" />
           <button onClick={() => handleTypeSelection('sedan')}>Sedán</button>
         </div>
       </div>

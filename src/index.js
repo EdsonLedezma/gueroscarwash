@@ -1,6 +1,5 @@
 import React from 'react';
-import { createRoot } from 'react-dom'; // Importar createRoot en lugar de ReactDOM
-import { BrowserRouter } from 'react-router-dom'; 
+import { createRoot } from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -8,9 +7,9 @@ import reportWebVitals from './reportWebVitals';
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter> 
+    
       <App />
-    </BrowserRouter>
+    
   </React.StrictMode>
 );
 

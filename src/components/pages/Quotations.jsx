@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 
 const servicesData = {
   compacto: [
-    { id: 1, name: 'Servicio 1', image: 'service1.jpg', description: 'Descripción del servicio 1 para vehículos compactos', price: 20 },
+    { id: 1, name: 'Lavado interior profesional', image: 'service1.jpg', description: 'Tapiceria lavada a vapor y/o succion, elimina manchas, malos olores y deja tus asientos y alfombra lo mas limpio posible, incluye aromatizante', price: 20 },
     { id: 2, name: 'Servicio 2', image: 'service2.jpg', description: 'Descripción del servicio 2 para vehículos compactos', price: 30 },
     
   ],
@@ -13,7 +13,7 @@ const servicesData = {
     
   ],
   pickup: [
-    { id: 1, name: 'Servicio 1', image: 'service1.jpg', description: 'Descripción del servicio 1 para pickups', price: 30 },
+    { id: 1, name: 'Servicio 1', image: '../img/suv.png', description: 'Descripción del servicio 1 para pickups', price: 30 },
     { id: 2, name: 'Servicio 2', image: 'service2.jpg', description: 'Descripción del servicio 2 para pickups', price: 40 },
     
   ],
@@ -26,7 +26,7 @@ const servicesData = {
 
 const Quotations = () => {
   const { vehicleType } = useParams();
-  const [services, setServices] = useState(servicesData[vehicleType] || []);
+  const [services] = useState(servicesData[vehicleType] || []);
   const [selectedServices, setSelectedServices] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
 
@@ -40,14 +40,14 @@ const Quotations = () => {
   };
 
   useEffect(() => {
-    // Calcular el precio total al seleccionar o deseleccionar servicios
+    
     const total = selectedServices.reduce((accumulator, service) => accumulator + service.price, 0);
     setTotalPrice(total);
   }, [selectedServices]);
 
   return (
     <div className="quotations-container">
-      <h2>Selecciona los servicios para tu vehículo:</h2>
+      <h2>Servicios disponibles para tu vehiculo:</h2>
       <div className="services-grid">
         {services.map((service) => (
           <div

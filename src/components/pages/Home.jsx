@@ -1,26 +1,29 @@
 // components/Home.jsx
 import React from 'react';
-import Header from '../autenticacion/Header';
+
 import Carousel from '../autenticacion/Carousel';
 import ServiceCard from '../autenticacion/ServiceCard';
+import Header from '../autenticacion/Header';
 import Footer from '../autenticacion/Footer';
 import './Home.css';
 
 const Home = () => {
   
-  const service1Images = ["url1", "url2", "url3"];
-  const service1Description = "Descripción del Servicio 1";
+  const service1Images = ["https://images-na.ssl-images-amazon.com/images/I/71GDy02YHtL._AC_SL1000_.jpg", "https://detailpark.com/wp-content/uploads/elementor/thumbs/polishing-oczeo6p7rxf4lol3nag668dzomex03kb06eptl06ms.png", "https://www.diexsa.com/wp-content/uploads/2017/08/estetica-automotriz.jpg"];
+  const service1Description = "Trabajamos con la mejor calidad, siempre brindando la mejor atencion y cuidado que tu vehiculo merece";
 
-  const service2Images = ["url4", "url5", "url6"];
-  const service2Description = "Descripción del Servicio 2";
+  const service2Images = ["https://okdiario.com/img/2016/11/07/lluvia-acida-formacion-como-a.jpg", "https://phantom-marca.unidadeditorial.es/1611a1c27f3765f6f73d461f0aae62a1/crop/0x157/2047x1309/resize/1320/f/jpg/assets/multimedia/imagenes/2022/03/15/16473468325482.jpg", "https://tse3.mm.bing.net/th?id=OIP.4bFNiWMg8cQybhpuMh3shAHaCv&pid=Api&P=0&h=180"];
+  const service2Description = "Existen multiples factores que pueden llegar a afectar los acabados externos e internos de tu vehiculo por eso es recomendable estar informado sobre el tipo de materiales de tu auto para evitar lo mejor posible que este se desgaste y pierda valor de reventa";
 
   return (
     <div className="home-container">
-      <Header />
+      
       <Carousel />
+      <h1 style={{ backgroundColor: '#007bff',textAlign:'center', color: 'white', padding: '40px' }}>El aspecto de tu auto habla mucho de ti por eso te ofrecemos las mejores opciones en detallado automotriz</h1>
+
       <ServiceCard images={service1Images} description={service1Description} />
       <ServiceCard images={service2Images} description={service2Description} />
-      <Footer />
+    
     </div>
   );
 }

@@ -1,21 +1,27 @@
-
 .service-card {
-    margin-bottom: 20px;
-  }
-  
-  .image-carousel {
-    display: flex;
-    overflow-x: auto;
-  }
-  
-  .image-carousel img {
-    width: 100px; 
-    height: auto;
-    margin-right: 10px;
-  }
-  
-  .description {
-    margin-top: 10px;
-    font-size: 16px;
-  }
-  
+  margin-bottom: 20px;
+}
+
+.image-carousel {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las imágenes se envuelvan en múltiples filas */
+}
+
+.image-carousel img {
+  width: calc(33.33% - 10px); /* Ajusta el ancho de cada imagen para que haya tres imágenes por fila, considerando el margen */
+  height: auto;
+  margin: 0 5px 10px; /* Ajusta los márgenes para espaciar las imágenes */
+  max-width: 40%; /* Establece un ancho máximo para las imágenes */
+  max-height: 40%; /* Establece una altura máxima para las imágenes */
+}
+
+
+.description {
+  margin-top: 10px;
+  font-size: 18px; /* Ajusta el tamaño de fuente de la descripción */
+  font-family: Arial, sans-serif; /* Estilo de fuente */
+  font-weight: bold; /* Texto en negrita */
+  text-align: center; /* Centra horizontalmente el texto */
+  padding: 10px;
+}
+
