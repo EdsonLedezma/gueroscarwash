@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import './VehicleTypeSelector.css';
 const VehicleTypeSelector = () => {
   const [selectedType, setSelectedType] = useState(null);
 
@@ -13,7 +13,7 @@ const VehicleTypeSelector = () => {
       <h2>Selecciona el tipo de vehículo:</h2>
       <div className="types">
         <div className="button-container">
-          <img src="https://s1.1zoom.me/big0/610/Chevrolet_White_Metallic_White_background_599623_1280x853.jpg" alt="Compacto" />
+          <img src="./img/silverado.png" alt="Compacto" />
           <button onClick={() => handleTypeSelection('compacto')}>Compacto</button>
         </div>
         <div className="button-container">

@@ -5,7 +5,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 const CarouselComponent = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = [
-    'https://i.pinimg.com/originals/27/4c/b0/274cb0c1f2ad74dae983a621fa7300e5.jpg',
+    './img/sedan.png',
     'https://i.pinimg.com/originals/27/4c/b0/274cb0c1f2ad74dae983a621fa7300e5.jpg',
     'https://i.pinimg.com/originals/27/4c/b0/274cb0c1f2ad74dae983a621fa7300e5.jpg',
     'https://i.pinimg.com/originals/27/4c/b0/274cb0c1f2ad74dae983a621fa7300e5.jpg'
