@@ -4,6 +4,9 @@ import './Login.css';
 const Login = () => {
   return (
     <div className="login-container">
+      <div className="logo-container">
+        <img src="./img/logoCar.png" alt="Logo" />
+      </div>
       <h2>Login</h2>
       
       <form>

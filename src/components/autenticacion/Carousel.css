@@ -1,4 +1,18 @@
 .carousel-container {
- height: 100px;
-}
-
+    max-height: 426px; 
+    overflow: hidden; 
+  }
+  
+  .carousel-container .carousel {
+    max-height: 100%;
+  }
+  
+  .carousel-container .carousel .slide {
+    max-height: 426px; 
+  }
+  
+  .carousel-container .carousel .slide img {
+    max-height: 100%; 
+    width: auto; 
+  }
+  

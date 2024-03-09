@@ -5,7 +5,7 @@ const Register = () => {
   return (
     <div className="register-container">
       <h2>Registro</h2>
-      {/* Formulario de registro */}
+      
       <form>
         <label htmlFor="username">Usuario:</label>
         <input type="text" id="username" name="username" />
@@ -19,7 +19,7 @@ const Register = () => {
         <button type="submit">Registrarse</button>
       </form>
       
-      {/* Enlace para ir a la página de login */}
+     
       <p>¿Ya tienes una cuenta? <Link to="/login">Inicia sesión aquí</Link></p>
     </div>
   );

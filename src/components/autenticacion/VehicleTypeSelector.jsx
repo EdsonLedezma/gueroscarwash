@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './VehicleTypeSelector.css';
+
 const VehicleTypeSelector = () => {
   const [selectedType, setSelectedType] = useState(null);
 
@@ -13,20 +14,28 @@ const VehicleTypeSelector = () => {
       <h2>Selecciona el tipo de vehículo:</h2>
       <div className="types">
         <div className="button-container">
-          <img src="./img/silverado.png" alt="Compacto" />
-          <button onClick={() => handleTypeSelection('compacto')}>Compacto</button>
+          <button onClick={() => handleTypeSelection('compacto')}>
+            <img src="./img/march.png" alt="Compacto" />
+          </button>
+          <h3>Compacto</h3>
         </div>
         <div className="button-container">
-          <img src="http://pluspng.com/img-png/white-suv-png-13-38-2048.png" alt="SUV" />
-          <button onClick={() => handleTypeSelection('suv')}>SUV</button>
+          <button onClick={() => handleTypeSelection('suv')}>
+            <img src="./img/suv.png" alt="SUV" />
+          </button>
+          <h3>SUV</h3>
         </div>
         <div className="button-container">
-          <img src="https://pngimg.com/uploads/pickup_truck/pickup_truck_PNG102882.png" alt="pickup" />
-          <button onClick={() => handleTypeSelection('pickup')}>Pickup</button>
+          <button onClick={() => handleTypeSelection('pickup')}>
+            <img src="./img/silverado.png" alt="pickup" />
+          </button>
+          <h3>Pickup</h3>
         </div>
         <div className="button-container">
-          <img src="" alt="sedan" />
-          <button onClick={() => handleTypeSelection('sedan')}>Sedán</button>
+          <button onClick={() => handleTypeSelection('sedan')}>
+            <img src="./img/sedan.png" alt="sedan" />
+          </button>
+          <h3>Sedán</h3>
         </div>
       </div>
       {selectedType && <Link to={`/quotations/${selectedType}`}>Continuar</Link>}

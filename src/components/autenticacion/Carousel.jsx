@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-
+import './Carousel.css';
 const CarouselComponent = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = [
     './img/sedan.png',
-    'https://i.pinimg.com/originals/27/4c/b0/274cb0c1f2ad74dae983a621fa7300e5.jpg',
-    'https://i.pinimg.com/originals/27/4c/b0/274cb0c1f2ad74dae983a621fa7300e5.jpg',
-    'https://i.pinimg.com/originals/27/4c/b0/274cb0c1f2ad74dae983a621fa7300e5.jpg'
+    './img/interiorsentra.png',
+    './img/ceracivic.png',
+    './img/exteriorsentra.png'
   ];
 
   useEffect(() => {

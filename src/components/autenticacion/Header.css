@@ -1,32 +1,61 @@
-/* Header.css */
 .header {
-    background-color: #007bff; 
-    padding: 20px;
-    color: #fff; 
-  }
-  
-  .nav-links {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .nav-links li {
-    margin-right: 20px;
-  }
-  
-  .nav-links li:last-child {
-    margin-right: 0;
-  }
-  
-  .nav-links li a {
-    color: #fff; 
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-links li a:hover {
-    color: #cceeff;
-  }
-  
+  background-color: #007bff; 
+  padding: 20px;
+  color: #fff; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  height: 100px;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 30px; 
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links li a {
+  color: #fff; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 30px; 
+  font-weight: bold; 
+}
+
+.nav-links li a:hover {
+  color: #cceeff;
+}
+
+
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+
+
+.button {
+  font-size: 20px;
+  padding: 12px 24px; 
+  margin-right: 330px; 
+}
+
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+
+.nav-links li:last-child .button {
+  margin-right: 0;
+}
